@@ -1,0 +1,36 @@
+html {
+    font-family: "Atkinson Hyperlegible", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 12rem;
+}
+
+.dropzone {
+    outline: solid 1px lightgrey;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.draggable-dropzone--occupied .item {
+    background: lightgrey;
+    padding: 0.5rem;
+    width: 4rem;
+    text-align: center;
+    cursor: grab;
+}
+.names {
+    display: flex;
+}
+.dropzone {
+    width: 5rem;
+}
+.card-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
