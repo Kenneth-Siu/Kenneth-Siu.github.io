@@ -29,6 +29,13 @@ figure {
     max-width: 45%;
     text-align: center;
 }
+figure#all-the-sacrifice {
+    width: 100%;
+}
+figure#all-the-sacrifice i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 figcaption {
     text-align: center;
@@ -111,4 +118,7 @@ main {
 .score-text .emoji {
     margin-left: 0.5rem;
     font-size: 2rem;
+}
+.favourite-keywords .ms-6x {
+    font-size: 6em;
 }
