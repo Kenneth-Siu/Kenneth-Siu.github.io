@@ -2,15 +2,45 @@ html {
     font-family: "Atkinson Hyperlegible", serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #f9f9f9;
+}
+.emoji {
+    margin-right: 0.25rem;
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+section {
+    margin-bottom: 5rem;
+}
+main section:not(:first-of-type) {
+    border-top: 1px solid lightgrey;
 }
 
-img {
+.card-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+figure {
     width: 12rem;
+    max-width: 45%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+main {
+    padding-left: 5rem;
 }
 
 .dropzone {
-    outline: solid 1px lightgrey;
     height: 50px;
+    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,15 +52,62 @@ img {
     width: 4rem;
     text-align: center;
     cursor: grab;
+    border-radius: 0.5rem;
 }
 .names {
     display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 20%;
+    outline: solid 1px lightgrey;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
-.dropzone {
-    width: 5rem;
-}
-.card-images {
+.answer-container {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    justify-content: center;
+}
+.guess {
+    height: 50px;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    outline: solid 1px lightgrey;
+    width: 10rem;
+    border-radius: 0.5rem;
+}
+.answer {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 1rem;
+}
+.placeholder-text {
+    color: grey;
+    position: absolute;
+    user-select: none;
+}
+.draggable-dropzone--occupied .placeholder-text {
+    display: none;
+}
+.score-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score, .out-of, .max-score {
+    font-size: 2rem;
+}
+.score-text .score {
+    margin-left: 0.25rem;
+}
+.score-text .emoji {
+    margin-left: 0.5rem;
+    font-size: 2rem;
 }

@@ -7,27 +7,18 @@
         <title>Xmas Magic Quiz</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Noto+Color+Emoji&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
         <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     </head>
     <body>
         <main>
-            <h1>How well do you know your friends' magic tastes?</h1>
-            <section>
+            <h1>How well do you know your friends?</h1>
+            <section class="favourite-cards">
                 <h2>Favourite cards</h2>
 
-                <div class="card-images">
-                    <img src="https://cards.scryfall.io/large/front/f/9/f968c5e9-12a8-4542-90b4-84e0238fa375.jpg?1562766084" />
-                    <img src="https://cards.scryfall.io/large/front/f/9/f968c5e9-12a8-4542-90b4-84e0238fa375.jpg?1562766084" />
-                    <img src="https://cards.scryfall.io/large/front/f/9/f968c5e9-12a8-4542-90b4-84e0238fa375.jpg?1562766084" />
-                    <img src="https://cards.scryfall.io/large/front/f/9/f968c5e9-12a8-4542-90b4-84e0238fa375.jpg?1562766084" />
-                    <img src="https://cards.scryfall.io/large/front/f/9/f968c5e9-12a8-4542-90b4-84e0238fa375.jpg?1562766084" />
-                    <div class="dropzone"></div>
-                </div>
-
-                <div class="container names">
+                <div class="names">
                     <div class="dropzone draggable-dropzone--occupied">
                         <div class="item">Kenny</div>
                     </div>
@@ -50,9 +41,359 @@
                         <div class="item">Jordan</div>
                     </div>
                     <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Nathan</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
                         <div class="item">Bryn</div>
                     </div>
                 </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/f/9/f968c5e9-12a8-4542-90b4-84e0238fa375.jpg?1562766084" />
+                        <figcaption>Time Stop</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/3/d/3d0eea0d-c790-4d91-962f-f05b22d0c8fa.jpg?1576384122" />
+                        <figcaption>Jace's Scrutiny</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.jpg?1562730661" />
+                        <figcaption>Storm Crow</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/8/2/824423ff-6441-4be6-b754-810adf9ca6a2.jpg?1562925761" />
+                        <figcaption>Thalia, Guardian of Thraben</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/e/e/ee60a8e9-3201-4a7e-8aa4-2c5e1042c8a5.jpg?1656453137" />
+                        <figcaption>The Modern Age</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Kenny</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/4/0/40f32503-8400-4572-aa5c-43cd5c2eeab5.jpg?1562910323" />
+                        <figcaption>Shivan Dragon</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/2/f/2fa16a96-8e70-4ab5-926c-edafaf5f5a63.jpg?1562906140" />
+                        <figcaption>Force of Nature</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/b/0/b0dce4ac-f472-4f3b-b01a-eff0902a578f.jpg?1562835614" />
+                        <figcaption>Balefire Dragon</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/c/e/ce0c3b45-cf1d-4d85-9fe3-fb26b4b15dfd.jpg?1562793278" />
+                        <figcaption>Dragonlord Atarka</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/7/c/7c341df3-177c-49b4-91fe-38f73c64ef88.jpg?1562826840" />
+                        <figcaption>Atarka, World Render</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Joe</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/9/d/9db5d6c2-b11f-442a-b172-c0c99c9bec07.jpg?1562631252" />
+                        <figcaption>Blastoderm</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/2/b/2b87069b-ebaf-4705-b5da-446932af9b73.jpg?1562903046" />
+                        <figcaption>Knight of Stromgald</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/c/c/cc78f2e5-c02b-4f58-8510-660ca27d9a71.jpg?1562938200" />
+                        <figcaption>Urza's Tower</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/8/7/8712c49e-f171-4669-bed9-87575a37af11.jpg?1559591574" />
+                        <figcaption>Disintegrate</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/2/6/26c68473-70ca-40ba-b5c6-71ec30f88a2c.jpg?1562568132" />
+                        <figcaption>Damnation</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Tomas</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/4/4/44f19fe3-7a17-4c45-adfa-590f73dfebfa.jpg?1562611769" />
+                        <figcaption>Vampire Nighthawk</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/0/8/0872d0ff-1060-44cc-9ed0-a6aa496440c8.jpg?1584831498" />
+                        <figcaption>Ethereal Absolution</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/6/b/6bbdd169-958f-42df-812d-f75fbed9576f.jpg?1561983457" />
+                        <figcaption>Soul Warden</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/a/e/ae3eba31-02eb-449a-8a36-899ada5664bc.jpg?1598914579" />
+                        <figcaption>Tunnel Vision</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/f/f/ff824392-fb5c-496c-be2f-6dfa6e04e3a2.jpg?1584831850" />
+                        <figcaption>Simic Ascendancy</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Anil</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/8/2/82c04014-91f9-4197-b4b4-f62c4739a5c2.jpg?1562028673" />
+                        <figcaption>Demonic Pact</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/c/e/ce3bd0d8-7e44-4cf2-9012-8ff0bc39417f.jpg?1562793389" />
+                        <figcaption>Sphere of Safety</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/9/7/97a8a5fe-0391-489b-9556-0a1bf7e1900d.jpg?1562596895" />
+                        <figcaption>Constant Mists</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/a/6/a6830e11-2f85-45b0-bd1f-cc66e5aa92c5.jpg?1658014462" />
+                        <figcaption>Davriel, Soul Broker</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/c/b/cbe6e7e5-ffea-4c6c-8a42-28e695029f24.jpg?1562938086" />
+                        <figcaption>Goblin Game</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Matt</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/c/c/cc9a04dc-afee-4194-80f5-fb1d9c906de7.jpg?1562936126" />
+                        <figcaption>Mana Drain</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/f/d/fdf59a6e-7708-45a1-884d-d12e9f7b9ed9.jpg?1543674579" />
+                        <figcaption>Approach of the Second Sun</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/2/5/25d2ca0c-5e96-4d64-aa64-054d4dbcc471.jpg?1562902674" />
+                        <figcaption>Recurring Nightmare</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/5/6/56a2609d-b535-400b-81d9-72989a33c70f.jpg?1582037402" />
+                        <figcaption>Niv-Mizzet Reborn</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/a/3/a3c4e2e0-1c0e-475d-a0f4-1be4216c2bad.jpg?1726286682" />
+                        <figcaption>The Jolly Balloon Man</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Ben</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/9/f/9f06db70-95f9-41eb-8e5f-8bc56fd34c09.jpg?1593095668" />
+                        <figcaption>Dictate of Erebos</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/f/8/f8fe2f99-7ec2-490c-8ec3-aa2fb4680826.jpg?1562722862" />
+                        <figcaption>Tombstone Stairwell</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/0/4/046aff0b-fa01-4a2d-a030-021a7ad01e60.jpg?1599707281" />
+                        <figcaption>Greater Good</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/d/5/d5c782cc-c951-4c6f-a93f-774ae6c1c214.jpg?1562721926" />
+                        <figcaption>Shallow Grave</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/a/3/a30735c4-7f12-4db9-972b-9b7568a8ada8.jpg?1562444721" />
+                        <figcaption>Plow Under</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Jordan</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/3/c/3cee9303-9d65-45a2-93d4-ef4aba59141b.jpg?1730489152" />
+                        <figcaption>Serra Angel</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/5/3/531cba81-afd7-4be4-adec-87edb77ba2a9.jpg?1562829281" />
+                        <figcaption>Archangel of Thune</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/b/a/ba149706-cd17-4da6-8403-ccfe2d6cb437.jpg?1592708201" />
+                        <figcaption>Avacyn, Angel of Hope</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/f/d/fd5b1633-c41d-42b1-af1b-4a872077ffbd.jpg?1562839369" />
+                        <figcaption>Elspeth, Sun's Champion</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/8/8/88bf4af9-4b14-43e7-9d50-0e6a895cece1.jpg?1591605156" />
+                        <figcaption>Serra the Benevolent</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Nathan</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/b/0/b0ae94ed-7314-470b-baba-f2f58bbc894a.jpg?1562821858" />
+                        <figcaption>Myr Battlesphere</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/4/3/43675ed7-ece1-4414-965e-9ebadcbf3dfb.jpg?1561824560" />
+                        <figcaption>Assemble the Legion</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/c/e/ce711943-c1a1-43a0-8b89-8d169cfb8e06.jpg?1628801721" />
+                        <figcaption>Lightning Bolt</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/b/a/ba149706-cd17-4da6-8403-ccfe2d6cb437.jpg?1592708201" />
+                        <figcaption>Avacyn, Angel of Hope</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/6/d/6d75e1f4-bd63-428e-8e6e-131594b3ba44.jpg?1675957064" />
+                        <figcaption>All Will Be One</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Bryn</p>
+                </div>
+
+                <h3>How did you do?</h3>
+                <button class="reveal-answers-button">Reveal answers</button>
+                <p class="score-text" style="display: none">
+                    Your score for this question: <span class="emoji"></span><span class="score"></span><span class="out-of">/</span
+                    ><span class="max-score"></span>
+                </p>
+                <button class="move-on-button" style="display: none">Move on to the next question...</button>
+            </section>
+
+            <section class="favourite-sets" style="display: none">
+                <h2>Favourite sets</h2>
+
+                <div class="names">
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Kenny</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Joe</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Tomas</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Anil</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Matt</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Ben</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Jordan</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Nathan</div>
+                    </div>
+                    <div class="dropzone draggable-dropzone--occupied">
+                        <div class="item">Bryn</div>
+                    </div>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/f/9/f968c5e9-12a8-4542-90b4-84e0238fa375.jpg?1562766084" />
+                        <figcaption>Time Stop</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/3/d/3d0eea0d-c790-4d91-962f-f05b22d0c8fa.jpg?1576384122" />
+                        <figcaption>Jace's Scrutiny</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.jpg?1562730661" />
+                        <figcaption>Storm Crow</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/8/2/824423ff-6441-4be6-b754-810adf9ca6a2.jpg?1562925761" />
+                        <figcaption>Thalia, Guardian of Thraben</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/e/e/ee60a8e9-3201-4a7e-8aa4-2c5e1042c8a5.jpg?1656453137" />
+                        <figcaption>The Modern Age</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Kenny</p>
+                </div>
+
+                <div class="card-images">
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/4/0/40f32503-8400-4572-aa5c-43cd5c2eeab5.jpg?1562910323" />
+                        <figcaption>Shivan Dragon</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/2/f/2fa16a96-8e70-4ab5-926c-edafaf5f5a63.jpg?1562906140" />
+                        <figcaption>Force of Nature</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/b/0/b0dce4ac-f472-4f3b-b01a-eff0902a578f.jpg?1562835614" />
+                        <figcaption>Balefire Dragon</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/c/e/ce0c3b45-cf1d-4d85-9fe3-fb26b4b15dfd.jpg?1562793278" />
+                        <figcaption>Dragonlord Atarka</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cards.scryfall.io/large/front/7/c/7c341df3-177c-49b4-91fe-38f73c64ef88.jpg?1562826840" />
+                        <figcaption>Atarka, World Render</figcaption>
+                    </figure>
+                </div>
+                <div class="answer-container">
+                    <div class="dropzone guess"><span class="placeholder-text">Your guess</span></div>
+                    <p class="answer" style="display: none"><span class="emoji"></span>Joe</p>
+                </div>
+
+                <h3>How did you do?</h3>
+                <button class="reveal-answers-button">Reveal answers</button>
+                <p class="score-text" style="display: none">
+                    Your score for this question: <span class="emoji"></span><span class="score"></span><span class="out-of">/</span
+                    ><span class="max-score"></span>
+                </p>
+                <button class="move-on-button" style="display: none">Move on to the next question...</button>
             </section>
         </main>
         <script type="module" src="./index.js"></script>
