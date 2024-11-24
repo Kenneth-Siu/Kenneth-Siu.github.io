@@ -39,9 +39,11 @@ function revealAnswers(sectionSelector) {
     }
 }
 document.querySelector(".favourite-cards .reveal-answers-button").addEventListener("click", () => revealAnswers(".favourite-cards"));
+document.querySelector(".favourite-sets .reveal-answers-button").addEventListener("click", () => revealAnswers(".favourite-sets"));
 
 function revealNextSection(buttonSelector, nextSectionSelector) {
     document.querySelector(nextSectionSelector).style.display = "block";
     document.querySelector(buttonSelector).style.display = "none";
 }
 document.querySelector(".favourite-cards .move-on-button").addEventListener("click", () => revealNextSection(".favourite-cards .move-on-button", ".favourite-sets"));
+document.querySelector(".favourite-sets .move-on-button").addEventListener("click", () => revealNextSection(".favourite-sets .move-on-button", ".favourite-keywords"));

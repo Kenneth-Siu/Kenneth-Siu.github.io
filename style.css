@@ -27,6 +27,7 @@ main section:not(:first-of-type) {
 figure {
     width: 12rem;
     max-width: 45%;
+    text-align: center;
 }
 
 figcaption {
