@@ -28,8 +28,12 @@ figure {
     width: 12rem;
     max-width: 45%;
     text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 figure#all-the-sacrifice {
+    display: block;
     width: 100%;
 }
 figure#all-the-sacrifice i {
@@ -109,7 +113,9 @@ main {
     justify-content: center;
     align-items: center;
 }
-.score, .out-of, .max-score {
+.score,
+.out-of,
+.max-score {
     font-size: 2rem;
 }
 .score-text .score {
@@ -121,4 +127,10 @@ main {
 }
 .favourite-keywords .ms-6x {
     font-size: 6em;
+}
+figure.rotating .spacer img,
+figure.rotating4 .spacer img {
+    position: relative;
+    opacity: 0;
+    animation: none;
 }

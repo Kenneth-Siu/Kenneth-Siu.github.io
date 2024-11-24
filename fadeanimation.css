@@ -1,0 +1,117 @@
+
+@keyframes fadeAnimation1 {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeAnimation2 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeAnimation3 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeAnimation4 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeAnimation5 {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+figure.rotating img {
+    opacity: 1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    width: 100%;
+}
+figure.rotating img:nth-of-type(1) {
+    animation-name: fadeAnimation1;
+}
+figure.rotating img:nth-of-type(2) {
+    animation-name: fadeAnimation2;
+}
+figure.rotating img:nth-of-type(3) {
+    animation-name: fadeAnimation3;
+}
+figure.rotating img:nth-of-type(4) {
+    animation-name: fadeAnimation4;
+}
+figure.rotating img:nth-of-type(5) {
+    animation-name: fadeAnimation5;
+}
