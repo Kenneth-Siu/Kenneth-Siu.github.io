@@ -11,10 +11,18 @@ html {
     font-style: normal;
 }
 section {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 main section:not(:first-of-type) {
     border-top: 1px solid lightgrey;
+    padding-top: 1rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 .card-images {
@@ -85,13 +93,12 @@ main {
 }
 .guess {
     height: 50px;
-    width: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     outline: solid 1px lightgrey;
-    width: 10rem;
+    width: 12rem;
     border-radius: 0.5rem;
 }
 .answer {
@@ -118,10 +125,12 @@ main {
 .max-score {
     font-size: 2rem;
 }
-.score-text .score {
+.score-text .score,
+.final-score-text .score {
     margin-left: 0.25rem;
 }
-.score-text .emoji {
+.score-text .emoji,
+.final-score-text .emoji {
     margin-left: 0.5rem;
     font-size: 2rem;
 }
@@ -133,4 +142,23 @@ figure.rotating4 .spacer img {
     position: relative;
     opacity: 0;
     animation: none;
+}
+section.final-score {
+    text-align: center;
+}
+.final-score ul {
+    list-style-type: none;
+}
+.final-score .final-score-text {
+    justify-content: center;
+}
+button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px lightgray solid;
+    cursor: pointer;
+}
+button:hover {
+    background-color: aliceblue;
 }
