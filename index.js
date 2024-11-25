@@ -63,12 +63,12 @@ function revealFinalScore(buttonSelector, nextSectionSelector) {
     section.style.display = "block";
     let currentScore = 0;
     const answerMaxScore = parseInt(document.querySelector(".favourite-cards .max-score").textContent);
-    const unorderedList = section.querySelector("ul");
+    const unorderedList = section.querySelector("div");
     window.scrollTo(0, document.body.scrollHeight);
     setTimeout(() => {
         const score1 = parseInt(document.querySelector(".favourite-cards .score").textContent);
         currentScore += score1;
-        const listItem1 = document.createElement("li");
+        const listItem1 = document.createElement("p");
         listItem1.textContent = "Favourite cards: " + score1 + " / " + answerMaxScore
         unorderedList.appendChild(listItem1);
         window.scrollTo(0, document.body.scrollHeight);
@@ -76,7 +76,7 @@ function revealFinalScore(buttonSelector, nextSectionSelector) {
         setTimeout(() => {
             const score2 = parseInt(document.querySelector(".favourite-sets .score").textContent);
             currentScore += score2;
-            const listItem2 = document.createElement("li");
+            const listItem2 = document.createElement("p");
             listItem2.textContent = "Favourite sets: " + score2 + " / " + answerMaxScore
             unorderedList.appendChild(listItem2);
             window.scrollTo(0, document.body.scrollHeight);
@@ -84,7 +84,7 @@ function revealFinalScore(buttonSelector, nextSectionSelector) {
             setTimeout(() => {
                 const score3 = parseInt(document.querySelector(".favourite-basic-land-printings .score").textContent);
                 currentScore += score3;
-                const listItem3 = document.createElement("li");
+                const listItem3 = document.createElement("p");
                 listItem3.textContent = "Favourite basic land printings: " + score3 + " / " + answerMaxScore
                 unorderedList.appendChild(listItem3);
                 window.scrollTo(0, document.body.scrollHeight);
@@ -92,7 +92,7 @@ function revealFinalScore(buttonSelector, nextSectionSelector) {
                 setTimeout(() => {
                     const score4 = parseInt(document.querySelector(".favourite-keywords .score").textContent);
                     currentScore += score4;
-                    const listItem4 = document.createElement("li");
+                    const listItem4 = document.createElement("p");
                     listItem4.textContent = "Favourite keywords/mechanics: " + score4 + " / " + answerMaxScore
                     unorderedList.appendChild(listItem4);
                     window.scrollTo(0, document.body.scrollHeight);
@@ -100,7 +100,7 @@ function revealFinalScore(buttonSelector, nextSectionSelector) {
                     setTimeout(() => {
                         const score5 = parseInt(document.querySelector(".favourite-vanilla-creatures .score").textContent);
                         currentScore += score5;
-                        const listItem5 = document.createElement("li");
+                        const listItem5 = document.createElement("p");
                         listItem5.textContent = "Favourite vanilla creatures: " + score5 + " / " + answerMaxScore
                         unorderedList.appendChild(listItem5);
                         window.scrollTo(0, document.body.scrollHeight);
