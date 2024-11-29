@@ -132,6 +132,9 @@ function revealFinalScore(buttonSelector, nextSectionSelector) {
                             } else if (currentScore / maxScore > 0.5) {
                                 scoreText.querySelector(".emoji").textContent += "🥳";
                                 clipboardText += "🥳";
+                            } else if (currentScore / maxScore > 0.2) {
+                                scoreText.querySelector(".emoji").textContent += "😕";
+                                clipboardText += "😕";
                             } else {
                                 scoreText.querySelector(".emoji").textContent += "😵";
                                 clipboardText += "😵";
