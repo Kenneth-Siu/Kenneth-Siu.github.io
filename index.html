@@ -1443,7 +1443,7 @@
                     <div class="dropzone guess"><span class="placeholder-text">Drag your guess here</span></div>
                     <p class="answer" style="display: none"><span class="emoji"></span>Ben</p>
                 </div>
-                
+
                 <div class="card-images">
                     <figure class="rotating">
                         <div>
@@ -1545,7 +1545,6 @@
                     <div class="dropzone guess"><span class="placeholder-text">Drag your guess here</span></div>
                     <p class="answer" style="display: none"><span class="emoji"></span>Nathan</p>
                 </div>
-                
 
                 <h3>How did you do?</h3>
                 <button class="reveal-answers-button">Reveal answers</button>
@@ -2200,11 +2199,14 @@
             </section>
             <section class="final-score" style="display: none">
                 <p>Well done for completing the quiz! Your final score is...</p>
-                <div></div>
+                <div class="section-scores"></div>
                 <p class="final-score-text" style="display: none">
                     <span class="emoji"></span><span class="score"></span><span class="out-of">/</span><span class="max-score"></span>
                 </p>
-                <p class="cta" style="display: none">You should go share it with the others <span class="emoji">😉</span></p>
+                <div class="cta" style="display: none">
+                    <p>You should go share it with the others <span class="emoji">😉</span></p>
+                    <button>Copy to clipboard</button>
+                </div>
             </section>
         </main>
         <script type="module" src="./index.js"></script>
